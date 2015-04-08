@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Flatiron&nbspschool | from Antibodies to Arrays]]></title>
   <link href="http://francomendoza.github.io/blog/categories/flatiron-and-nbspschool/atom.xml" rel="self"/>
   <link href="http://francomendoza.github.io/"/>
-  <updated>2015-04-07T18:26:37-04:00</updated>
+  <updated>2015-04-07T21:44:12-04:00</updated>
   <id>http://francomendoza.github.io/</id>
   <author>
     <name><![CDATA[Franco]]></name>
@@ -18,7 +18,19 @@
     <link href="http://francomendoza.github.io/blog/2015/04/07/on-cells-and-objects/"/>
     <updated>2015-04-07T18:13:00-04:00</updated>
     <id>http://francomendoza.github.io/blog/2015/04/07/on-cells-and-objects</id>
-    <content type="html"><![CDATA[<p>Something interesting&hellip;</p>
+    <content type="html"><![CDATA[<p>How is programming similar to our biology?</p>
+
+<p>People always refer to DNA as the code to life. Is this code similar to the code that we as programmers write everyday? In what ways is it different? Let&rsquo;s explore&hellip;</p>
+
+<p>So how does DNA turn into cells, tissues, body parts, and life as we know it?</p>
+
+<p>Transcription and Translation</p>
+
+<p><img src="https://www.biologis.com/sites/default/files/Bild_24_0.jpg" alt="Alt text" /></p>
+
+<p>Transcription is the process by which DNA is, in a sense, copied into RNA so it can be translated into polypetides. This may sound similar to code being translated into something the computer processor understands (machine lanuguage). This is not the case, DNA is translated because mRNA is smaller and it can leave the nucleus.</p>
+
+<p>Translation is the process by which a ribosome takes mRNA and decodes it to create a polypeptide.</p>
 ]]></content>
   </entry>
   
