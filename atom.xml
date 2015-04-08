@@ -4,7 +4,7 @@
 	<title><![CDATA[from Antibodies to Arrays]]></title>
 	<link href="http://francomendoza.github.io/atom.xml" rel="self"/>
 	<link href="http://francomendoza.github.io/"/>
-	<updated>2015-04-07T21:44:12-04:00</updated>
+	<updated>2015-04-07T22:03:24-04:00</updated>
 	<id>http://francomendoza.github.io/</id>
 	<author>
 		<name><![CDATA[Franco]]></name>
@@ -15,7 +15,7 @@
 	
 	<entry>
 		
-			<title type="html"><![CDATA[On cells and objects]]></title>
+			<title type="html"><![CDATA[on DNA and Programming Languages]]></title>
 		
 		<link href="http://francomendoza.github.io/blog/2015/04/07/on-cells-and-objects/"/>
 		<updated>2015-04-07T18:13:00-04:00</updated>
@@ -32,13 +32,17 @@
 
 <p>So how does DNA turn into cells, tissues, body parts, and life as we know it?</p>
 
-<p>Transcription and Translation</p>
+<p>Transcription and Translation - Oversimplified&hellip;</p>
 
 <p><img src="https://www.biologis.com/sites/default/files/Bild_24_0.jpg" alt="Alt text" /></p>
 
 <p>Transcription is the process by which DNA is, in a sense, copied into RNA so it can be translated into polypetides. This may sound similar to code being translated into something the computer processor understands (machine lanuguage). This is not the case, DNA is translated because mRNA is smaller and it can leave the nucleus.</p>
 
-<p>Translation is the process by which a ribosome takes mRNA and decodes it to create a polypeptide.</p>
+<p>Translation is the process by which a ribosome takes mRNA and decodes it to create a polypeptide. These polypeptides have a wide variety of functions, performing duties as antibodies, enzymes, etc. These are the same enzymes that decoded the DNA in the first place!</p>
+
+<p>A code that runs a function to decode itself?</p>
+
+<p>In the end DNA is probably more similar to machine code&hellip;</p>
 ]]>
 		</content>
 	</entry>
