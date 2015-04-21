@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title><![CDATA[from Antibodies to Arrays]]></title>
-	<link href="http://francomendoza.github.io/atom.xml" rel="self"/>
-	<link href="http://francomendoza.github.io/"/>
-	<updated>2015-04-21T01:14:52-04:00</updated>
-	<id>http://francomendoza.github.io/</id>
-	<author>
-		<name><![CDATA[Franco]]></name>
-		
-	</author>
-	<generator uri="http://octopress.org/">Octopress</generator>
+  <title><![CDATA[from Antibodies to Arrays]]></title>
+  <link href="http://francomendoza.github.io/atom.xml" rel="self"/>
+  <link href="http://francomendoza.github.io/"/>
+  <updated>2015-04-21T01:16:56-04:00</updated>
+  <id>http://francomendoza.github.io/</id>
+  <author>
+    <name><![CDATA[Franco]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
-	
-	<entry>
-		
-			<title type="html"><![CDATA[Mutations are the key to evolution?]]></title>
-		
-		<link href="http://francomendoza.github.io/blog/2015/04/21/mutations-are-the-key-to-evolution/"/>
-		<updated>2015-04-21T01:04:57-04:00</updated>
-		<id>http://francomendoza.github.io/blog/2015/04/21/mutations-are-the-key-to-evolution</id>
-		<content type="html">
-			<![CDATA[
-				
-					<p></p>
-				
-			]]>
-			<![CDATA[<p>Mutations are the key to evolution?</p>
+  
+  <entry>
+    <title type="html"><![CDATA[Mutations are the key to evolution?]]></title>
+    <link href="http://francomendoza.github.io/blog/2015/04/21/mutations-are-the-key-to-evolution/"/>
+    <updated>2015-04-21T01:04:57-04:00</updated>
+    <id>http://francomendoza.github.io/blog/2015/04/21/mutations-are-the-key-to-evolution</id>
+    <content type="html"><![CDATA[<p>Mutations are the key to evolution?</p>
 
 <p>Definition: An immutable object is one whose state cannot be changed after it is created.</p>
 
@@ -65,24 +57,15 @@
 <p>In Example 7 we see that there is some method that may possibly modify our array.  This may be a quick check now, but when you have many method calls within method calls, the uncertainty of your original array being the same will be unbearable!</p>
 
 <p>So isn&rsquo;t immutable the way to go?  Well not necessarily&hellip; One major downfall is the amount of memory that would be used if all objects were immutable.  This is becoming a smaller concern where there are multiple core computers that can do parallel processing.  Regardless of which is better suited for your application, be careful with those mutations!</p>
-]]>
-		</content>
-	</entry>
-	
-	<entry>
-		
-			<title type="html"><![CDATA[on DNA and Programming Languages]]></title>
-		
-		<link href="http://francomendoza.github.io/blog/2015/04/07/on-cells-and-objects/"/>
-		<updated>2015-04-07T18:13:00-04:00</updated>
-		<id>http://francomendoza.github.io/blog/2015/04/07/on-cells-and-objects</id>
-		<content type="html">
-			<![CDATA[
-				
-					<p></p>
-				
-			]]>
-			<![CDATA[<p>How is programming similar to our biology?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[on DNA and Programming Languages]]></title>
+    <link href="http://francomendoza.github.io/blog/2015/04/07/on-cells-and-objects/"/>
+    <updated>2015-04-07T18:13:00-04:00</updated>
+    <id>http://francomendoza.github.io/blog/2015/04/07/on-cells-and-objects</id>
+    <content type="html"><![CDATA[<p>How is programming similar to our biology?</p>
 
 <p>People always refer to DNA as the code to life. Is this code similar to the code that we as programmers write everyday? In what ways is it different? Let&rsquo;s explore&hellip;</p>
 
@@ -99,8 +82,7 @@
 <p>A code that runs a function to decode itself?</p>
 
 <p>In the end DNA is probably more similar to machine code&hellip;</p>
-]]>
-		</content>
-	</entry>
-	
+]]></content>
+  </entry>
+  
 </feed>

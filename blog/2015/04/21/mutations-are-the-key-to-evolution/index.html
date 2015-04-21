@@ -1,59 +1,104 @@
 
-<!doctype html>
-<!-- START OF _layouts/default.html -->
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" >
-		<meta content="width=device-width,initial-scale=1" name="viewport">
-		<meta content="attempting to relate the natural sciences to the science of writing instructions" name="description">
-		<meta content="from Antibodies to Arrays" name="author">
-		
-		<title>Mutations are the key to evolution? &mdash; from Antibodies to Arrays</title>
-		
-		<!-- Styles -->
-		<link href="/stylesheets/main.css" rel="stylesheet">
-		
-		<!-- Google webfonts -->
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cousine">
-		
-		<!-- jQuery and plugins -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script src="/js/jquery.zclip.min.js"></script>
-		
-		<!-- Syntax highlighter -->
-		<link href="/stylesheets/prettify-hemisu.css" type="text/css" rel="stylesheet" />
-		<script type="text/javascript" src="/js/prettify.js"></script>
-		
-		<!--<link href="http://feeds.feedburner.com/turkeltaub" rel="alternate" title="from Antibodies to Arrays" type="application/rss+xml" />&#8211;>
-		
-	</head>
-	<body onload="prettyPrint()">
-	
-		<div class="wrap">
-	
-			<header>
-				<div class="title">from Antibodies to Arrays</div>
-				
-				<div class="navi">
-					<ul>
-						<li><a href="/">Blog</a></li>
-						<li><a href="/blog/archives">Archives</a></li>
-					</ul>
-				</div> <!-- // .navi -->
-			</header>
-		
-				<!-- START OF _layouts/post.html -->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
+	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta charset="utf-8">
+	<title>Mutations are the key to evolution?  | from Antibodies to Arrays</title>
 
-<!-- START OF _includes/article.html -->
-<article>
-	<header>
-		<h1><a href="/blog/2015/04/21/mutations-are-the-key-to-evolution/">Mutations are the key to evolution?</a></h1>
-		<time>21 April 2015</time>
-	</header>
-		<div class="content">
-			<p>Mutations are the key to evolution?</p>
+<meta name="author" content="Franco"> 
+
+<meta name="description" content="attempting to relate the natural sciences to the science of writing instructions"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="from Antibodies to Arrays" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.fancybox.pack.js"></script>
+
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script>
+
+	
+</head>
+
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">from Antibodies to Arrays</a></h1>
+<h4>a stream of consciousness</h4>
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="https://www.google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:francomendoza.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Mutations Are the Key to Evolution?</h2>
+	<div class="entry-content"><p>Mutations are the key to evolution?</p>
 
 <p>Definition: An immutable object is one whose state cannot be changed after it is created.</p>
 
@@ -92,73 +137,68 @@
 <p>In Example 7 we see that there is some method that may possibly modify our array.  This may be a quick check now, but when you have many method calls within method calls, the uncertainty of your original array being the same will be unbearable!</p>
 
 <p>So isn&rsquo;t immutable the way to go?  Well not necessarily&hellip; One major downfall is the amount of memory that would be used if all objects were immutable.  This is becoming a smaller concern where there are multiple core computers that can do parallel processing.  Regardless of which is better suited for your application, be careful with those mutations!</p>
-
-			
-			
-		</div>
-	<footer>
-		
+</div>
 
 
-		
+<div class="meta">
+	<div class="date">
+
+
+
+
+
 
 
 
   
-		
-			Tagged under
-		
-    <a class='category' href='/blog/categories/flatiron-school/'>flatiron&nbsp;school</a>
+
+
+<time datetime="2015-04-21T01:04:57-04:00" pubdate data-updated="true"></time></div>
 	
 
+<div class="tags">
+
+	<a class='category' href='/blog/categories/flatiron-school/'>flatiron&nbsp;school</a>
+
+</div>
+
 
 	
+</div></article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
 	
-	</footer>
 	
-</article>
-<!-- END OF _includes/article.html -->
+	<a class="addthis_button_tweet"></a>
+	
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> &#8212;>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
 
 
-<!-- END OF _/layouts/post.html -->
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2015
 
-		
-			<footer>
-				Copyright &copy; 2015
+    Franco
 
-	Franco
+<br>
+Powered by Octopress.
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
 
 
-			</footer>
-			
-		</div> <!-- // .wrap -->
-	</body>
-	<script>
-		$(document).ready(function() {
-			// Make images center
-			$('p:has(img)').css('text-align', 'center');
-			
-			// Add the image's title attribute as a caption
-			$('p:has(img)').append(function () {
-				return '<div class="caption">' + ($('img', this).attr('title') || "") + '</div>';
-			});
-			
-			// Prettify code
-			$('code').addClass('prettyprint');
-			$('pre code').addClass('linenums');
-			
-			// Copy to clipboard with button
-			$('pre:has(code)').prepend(function(){
-				return '<div class="clip-btn">copy to clipboard</div>';
-			});
-			$('.clip-btn').zclip({
-				path:'/js/ZeroClipboard.swf',
-				copy: $(this).next('code').text(),
-				afterCopy: function(){
-					$(this).replaceWith('<div class="clip-btn">copied!');
-					}
-			});
-		});
-	</script>
+
+
+
+
+</body>
 </html>
-<!-- END OF _layouts/default.html -->

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Flatiron&nbsp;school | from Antibodies to Arrays]]></title>
+  <title><![CDATA[Category: flatiron&nbsp;school | from Antibodies to Arrays]]></title>
   <link href="http://francomendoza.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
   <link href="http://francomendoza.github.io/"/>
-  <updated>2015-04-21T01:14:52-04:00</updated>
+  <updated>2015-04-21T01:16:56-04:00</updated>
   <id>http://francomendoza.github.io/</id>
   <author>
     <name><![CDATA[Franco]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Mutations Are the Key to Evolution?]]></title>
+    <title type="html"><![CDATA[Mutations are the key to evolution?]]></title>
     <link href="http://francomendoza.github.io/blog/2015/04/21/mutations-are-the-key-to-evolution/"/>
     <updated>2015-04-21T01:04:57-04:00</updated>
     <id>http://francomendoza.github.io/blog/2015/04/21/mutations-are-the-key-to-evolution</id>
