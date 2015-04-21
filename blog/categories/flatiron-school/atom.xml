@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Flatiron&nbsp;school | from Antibodies to Arrays]]></title>
   <link href="http://francomendoza.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
   <link href="http://francomendoza.github.io/"/>
-  <updated>2015-04-21T01:10:50-04:00</updated>
+  <updated>2015-04-21T01:14:52-04:00</updated>
   <id>http://francomendoza.github.io/</id>
   <author>
     <name><![CDATA[Franco]]></name>
@@ -22,7 +22,7 @@
 
 <p>Definition: An immutable object is one whose state cannot be changed after it is created.</p>
 
-<p><img src="/./source/images/Example_1" alt="Alt text" /></p>
+<p><img src="~/dev/octopress/source/images/Example_1_2.png" alt="Alt text" /></p>
 
 <p>In the example 1 and 2 we modify the original object, Fixnum, and an Array, and the result is a new object.  This is evident through the change in #object_id.</p>
 
