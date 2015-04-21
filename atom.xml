@@ -4,7 +4,7 @@
 	<title><![CDATA[from Antibodies to Arrays]]></title>
 	<link href="http://francomendoza.github.io/atom.xml" rel="self"/>
 	<link href="http://francomendoza.github.io/"/>
-	<updated>2015-04-07T22:03:24-04:00</updated>
+	<updated>2015-04-21T01:09:36-04:00</updated>
 	<id>http://francomendoza.github.io/</id>
 	<author>
 		<name><![CDATA[Franco]]></name>
@@ -12,6 +12,62 @@
 	</author>
 	<generator uri="http://octopress.org/">Octopress</generator>
 
+	
+	<entry>
+		
+			<title type="html"><![CDATA[Mutations are the key to evolution?]]></title>
+		
+		<link href="http://francomendoza.github.io/blog/2015/04/21/mutations-are-the-key-to-evolution/"/>
+		<updated>2015-04-21T01:04:57-04:00</updated>
+		<id>http://francomendoza.github.io/blog/2015/04/21/mutations-are-the-key-to-evolution</id>
+		<content type="html">
+			<![CDATA[
+				
+					<p></p>
+				
+			]]>
+			<![CDATA[<p>Mutations are the key to evolution?</p>
+
+<p>Definition: An immutable object is one whose state cannot be changed after it is created.</p>
+
+<p><img src="http://francomendoza.github.io/source/images/Example_1" alt="Alt text" /></p>
+
+<p>In the example 1 and 2 we modify the original object, Fixnum, and an Array, and the result is a new object.  This is evident through the change in #object_id.</p>
+
+<p>Insert ex 3</p>
+
+<p>In Example 3 we use a different method to add the string &ldquo;three&rdquo; to our Array: the &ldquo;shovel-method&rdquo;, otherwise known as #concat().  We would imagine a similar result as Example 2, as in, a new object would be returned.  Instead we see that the same object has been returned.  This means the object has been mutated.</p>
+
+<p>The first conclusion we can draw is that Array&rsquo;s are mutable objects in Ruby.  Second, the mutation seems to occur with some methods (&lt;&lt;), but not with others (+=).</p>
+
+<p>Perhaps the &ldquo;shovel-method&rdquo; mutates all objects?</p>
+
+<p>insert ex 4</p>
+
+<p>The answer is no.  Fixnums/Integers are immutable, and rightfully so.  A number is always going to be that number.  Think about a method mutates objects, such as any method that ends with a &ldquo;!&rdquo;&hellip;</p>
+
+<p>insert ex 5</p>
+
+<p>This would not make any sense, no method could ever change the value of 26 to 21.</p>
+
+<p>Ok so why does any of this matter?</p>
+
+<p>Something unusual about Ruby is that its String&rsquo;s are mutable, unlike most other popular OO languages (Python, Javascript, etc.).  This can cause problems if the developer is irresponsible with their Strings.  For example, a String as a key in a hash.</p>
+
+<p>insert ex 6</p>
+
+<p>This is why it is preferable to use Symbols as keys, as they are immutable.  Well what are some other benefits of immutability?</p>
+
+<p>Readability:</p>
+
+<p>insert ex 7</p>
+
+<p>In Example 7 we see that there is some method that may possibly modify our array.  This may be a quick check now, but when you have many method calls within method calls, the uncertainty of your original array being the same will be unbearable!</p>
+
+<p>So isn&rsquo;t immutable the way to go?  Well not necessarily&hellip; One major downfall is the amount of memory that would be used if all objects were immutable.  This is becoming a smaller concern where there are multiple core computers that can do parallel processing.  Regardless of which is better suited for your application, be careful with those mutations!</p>
+]]>
+		</content>
+	</entry>
 	
 	<entry>
 		
