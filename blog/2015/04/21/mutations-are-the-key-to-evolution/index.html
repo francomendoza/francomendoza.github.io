@@ -106,7 +106,7 @@ $(document).ready(
 
 <p>In the example 1 and 2 we modify the original object, Fixnum, and an Array, and the result is a new object.  This is evident through the change in #object_id.</p>
 
-<p>Insert ex 3</p>
+<p><img src="/images/Example_3.png" alt="Alt text" /></p>
 
 <p>In Example 3 we use a different method to add the string &ldquo;three&rdquo; to our Array: the &ldquo;shovel-method&rdquo;, otherwise known as #concat().  We would imagine a similar result as Example 2, as in, a new object would be returned.  Instead we see that the same object has been returned.  This means the object has been mutated.</p>
 
@@ -114,11 +114,11 @@ $(document).ready(
 
 <p>Perhaps the &ldquo;shovel-method&rdquo; mutates all objects?</p>
 
-<p>insert ex 4</p>
+<p><img src="/images/Example_4.png" alt="Alt text" /></p>
 
 <p>The answer is no.  Fixnums/Integers are immutable, and rightfully so.  A number is always going to be that number.  Think about a method mutates objects, such as any method that ends with a &ldquo;!&rdquo;&hellip;</p>
 
-<p>insert ex 5</p>
+<p><img src="/images/Example_5.png" alt="Alt text" /></p>
 
 <p>This would not make any sense, no method could ever change the value of 26 to 21.</p>
 
@@ -126,13 +126,13 @@ $(document).ready(
 
 <p>Something unusual about Ruby is that its String&rsquo;s are mutable, unlike most other popular OO languages (Python, Javascript, etc.).  This can cause problems if the developer is irresponsible with their Strings.  For example, a String as a key in a hash.</p>
 
-<p>insert ex 6</p>
+<p><img src="/images/Example_6.png" alt="Alt text" /></p>
 
 <p>This is why it is preferable to use Symbols as keys, as they are immutable.  Well what are some other benefits of immutability?</p>
 
 <p>Readability:</p>
 
-<p>insert ex 7</p>
+<p><img src="/images/Example_7.png" alt="Alt text" /></p>
 
 <p>In Example 7 we see that there is some method that may possibly modify our array.  This may be a quick check now, but when you have many method calls within method calls, the uncertainty of your original array being the same will be unbearable!</p>
 
