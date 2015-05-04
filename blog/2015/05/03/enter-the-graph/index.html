@@ -5,7 +5,7 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>Mutations are the key to evolution?  | from Antibodies to Arrays</title>
+	<title>Enter the Graph  | from Antibodies to Arrays</title>
 
 <meta name="author" content="Franco"> 
 
@@ -97,44 +97,39 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Mutations Are the Key to Evolution?</h2>
-	<div class="entry-content"><p>Definition: An immutable object is one whose state cannot be changed after it is created.</p>
+	<h2 class="title">Enter the Graph</h2>
+	<div class="entry-content"><p>A graph model can be used to explain many things including the structure of the internet, or the neural connections in your brain. Specifically, a graph is a set of nodes and edges/relationships between those nodes. The relationships between data are just as important as data itself. This cuts out the need for joins and join tables in the classic relational model because the data is already connected.</p>
 
-<p><img src="/images/Example_1_2.png" alt="Alt text" /></p>
+<p>For example, if we wanted to create a database for storing artists, songs, and their genres where:
+  1. Artists have many songs, and many genres through songs
+  2. Songs have many genres
+  3. Genres have many songs</p>
 
-<p>In the example 1 and 2 we modify the original object, Fixnum, and an Array, and the result is a new object.  This is evident through the change in #object_id.</p>
+<p>A relational database would require four tables, including a &ldquo;join-table&rdquo; that would allow for a many to many relationship between songs and genres.</p>
 
-<p><img src="/images/Example_3.png" alt="Alt text" /></p>
+<p><img src="/images/sql_tables.png" alt="Alt text" /></p>
 
-<p>In Example 3 we use a different method to add the string &ldquo;three&rdquo; to our Array: the &ldquo;shovel-method&rdquo;, otherwise known as #concat().  We would imagine a similar result as Example 2, as in, a new object would be returned.  Instead we see that the same object has been returned.  This means the object has been mutated.</p>
+<p>If you wanted to see what genres were associated to an artist, your query would look something like this&hellip;</p>
 
-<p>The first conclusion we can draw is that Array&rsquo;s are mutable objects in Ruby.  Second, the mutation seems to occur with some methods (&lt;&lt;), but not with others (+=).</p>
+<p><img src="/images/sql_query.png" alt="Alt text" /></p>
 
-<p>Perhaps the &ldquo;shovel-method&rdquo; mutates all objects?</p>
+<p>So many joins.</p>
 
-<p><img src="/images/Example_4.png" alt="Alt text" /></p>
+<p>In a graph database, each artist, song, and genre would be a separate node, and the relationships between them are already established.</p>
 
-<p>The answer is no.  Fixnums/Integers are immutable, and rightfully so.  A number is always going to be that number.  Think about a method mutates objects, such as any method that ends with a &ldquo;!&rdquo;&hellip;</p>
+<p><img src="/images/graph.png" alt="Alt text" /></p>
 
-<p><img src="/images/Example_5.png" alt="Alt text" /></p>
+<p>Querying in graph databases is more about pattern matching&hellip;</p>
 
-<p>This would not make any sense, no method could ever change the value of 26 to 21.</p>
+<p><img src="/images/graph_query.png" alt="Alt text" /></p>
 
-<p>Ok so why does any of this matter?</p>
+<p>Graphs more intuitively describe the data, making querying much simpler to write. In addition, since data is already joined, queries are independent of dataset size and therefore faster.</p>
 
-<p>Something unusual about Ruby is that its String&rsquo;s are mutable, unlike most other popular OO languages (Python, Javascript, etc.).  This can cause problems if the developer is irresponsible with their Strings.  For example, a String as a key in a hash.</p>
+<p>Note: In this example, Cypher is being used as the querying language.  Cypher is used with the Neo4j database.</p>
 
-<p><img src="/images/Example_6.png" alt="Alt text" /></p>
+<p>So why aren&rsquo;t graphs more popular in the wild?</p>
 
-<p>This is why it is preferable to use Symbols as keys, as they are immutable.  Well what are some other benefits of immutability?</p>
-
-<p>Readability:</p>
-
-<p><img src="/images/Example_7.png" alt="Alt text" /></p>
-
-<p>In Example 7 we see that there is some method that may possibly modify our array.  This may be a quick check now, but when you have many method calls within method calls, the uncertainty of your original array being the same will be unbearable!</p>
-
-<p>So isn&rsquo;t immutable the way to go?  Well not necessarily&hellip; One major downfall is the amount of memory that would be used if all objects were immutable.  This is becoming a smaller concern where there are multiple core computers that can do parallel processing.  Regardless of which is better suited for your application, be careful with those mutations!</p>
+<p>Relational databases have been optimized and are much more reliable in many ways relative to NoSQL technologies.</p>
 </div>
 
 
@@ -151,7 +146,7 @@ $(document).ready(
   
 
 
-<time datetime="2015-04-21T01:04:57-04:00" pubdate data-updated="true"></time></div>
+<time datetime="2015-05-03T16:50:40-04:00" pubdate data-updated="true"></time></div>
 	
 
 <div class="tags">

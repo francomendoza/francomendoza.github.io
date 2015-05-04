@@ -4,7 +4,7 @@
   <title><![CDATA[from Antibodies to Arrays]]></title>
   <link href="http://francomendoza.github.io/atom.xml" rel="self"/>
   <link href="http://francomendoza.github.io/"/>
-  <updated>2015-04-21T01:27:01-04:00</updated>
+  <updated>2015-05-04T00:34:26-04:00</updated>
   <id>http://francomendoza.github.io/</id>
   <author>
     <name><![CDATA[Franco]]></name>
@@ -14,13 +14,51 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Enter the Graph]]></title>
+    <link href="http://francomendoza.github.io/blog/2015/05/03/enter-the-graph/"/>
+    <updated>2015-05-03T16:50:40-04:00</updated>
+    <id>http://francomendoza.github.io/blog/2015/05/03/enter-the-graph</id>
+    <content type="html"><![CDATA[<p>A graph model can be used to explain many things including the structure of the internet, or the neural connections in your brain. Specifically, a graph is a set of nodes and edges/relationships between those nodes. The relationships between data are just as important as data itself. This cuts out the need for joins and join tables in the classic relational model because the data is already connected.</p>
+
+<p>For example, if we wanted to create a database for storing artists, songs, and their genres where:
+  1. Artists have many songs, and many genres through songs
+  2. Songs have many genres
+  3. Genres have many songs</p>
+
+<p>A relational database would require four tables, including a &ldquo;join-table&rdquo; that would allow for a many to many relationship between songs and genres.</p>
+
+<p><img src="http://francomendoza.github.io/images/sql_tables.png" alt="Alt text" /></p>
+
+<p>If you wanted to see what genres were associated to an artist, your query would look something like this&hellip;</p>
+
+<p><img src="http://francomendoza.github.io/images/sql_query.png" alt="Alt text" /></p>
+
+<p>So many joins.</p>
+
+<p>In a graph database, each artist, song, and genre would be a separate node, and the relationships between them are already established.</p>
+
+<p><img src="http://francomendoza.github.io/images/graph.png" alt="Alt text" /></p>
+
+<p>Querying in graph databases is more about pattern matching&hellip;</p>
+
+<p><img src="http://francomendoza.github.io/images/graph_query.png" alt="Alt text" /></p>
+
+<p>Graphs more intuitively describe the data, making querying much simpler to write. In addition, since data is already joined, queries are independent of dataset size and therefore faster.</p>
+
+<p>Note: In this example, Cypher is being used as the querying language.  Cypher is used with the Neo4j database.</p>
+
+<p>So why aren&rsquo;t graphs more popular in the wild?</p>
+
+<p>Relational databases have been optimized and are much more reliable in many ways relative to NoSQL technologies.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Mutations are the key to evolution?]]></title>
     <link href="http://francomendoza.github.io/blog/2015/04/21/mutations-are-the-key-to-evolution/"/>
     <updated>2015-04-21T01:04:57-04:00</updated>
     <id>http://francomendoza.github.io/blog/2015/04/21/mutations-are-the-key-to-evolution</id>
-    <content type="html"><![CDATA[<p>Mutations are the key to evolution?</p>
-
-<p>Definition: An immutable object is one whose state cannot be changed after it is created.</p>
+    <content type="html"><![CDATA[<p>Definition: An immutable object is one whose state cannot be changed after it is created.</p>
 
 <p><img src="http://francomendoza.github.io/images/Example_1_2.png" alt="Alt text" /></p>
 
