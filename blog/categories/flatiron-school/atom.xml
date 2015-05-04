@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flatiron&nbsp;school | from Antibodies to Arrays]]></title>
   <link href="http://francomendoza.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
   <link href="http://francomendoza.github.io/"/>
-  <updated>2015-05-04T00:36:21-04:00</updated>
+  <updated>2015-05-04T00:37:13-04:00</updated>
   <id>http://francomendoza.github.io/</id>
   <author>
     <name><![CDATA[Franco]]></name>
@@ -20,10 +20,14 @@
     <id>http://francomendoza.github.io/blog/2015/05/03/enter-the-graph</id>
     <content type="html"><![CDATA[<p>A graph model can be used to explain many things including the structure of the internet, or the neural connections in your brain. Specifically, a graph is a set of nodes and edges/relationships between those nodes. The relationships between data are just as important as data itself. This cuts out the need for joins and join tables in the classic relational model because the data is already connected.</p>
 
-<p>For example, if we wanted to create a database for storing artists, songs, and their genres where:
-1. Artists have many songs, and many genres through songs
-2. Songs have many genres
-3. Genres have many songs</p>
+<p>For example, if we wanted to create a database for storing artists, songs, and their genres where:</p>
+
+<ol>
+<li>Artists have many songs, and many genres through songs</li>
+<li>Songs have many genres</li>
+<li>Genres have many songs</li>
+</ol>
+
 
 <p>A relational database would require four tables, including a &ldquo;join-table&rdquo; that would allow for a many to many relationship between songs and genres.</p>
 
