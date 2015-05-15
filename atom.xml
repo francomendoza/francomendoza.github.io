@@ -4,7 +4,7 @@
   <title><![CDATA[from Antibodies to Arrays]]></title>
   <link href="http://francomendoza.github.io/atom.xml" rel="self"/>
   <link href="http://francomendoza.github.io/"/>
-  <updated>2015-05-14T22:32:18-04:00</updated>
+  <updated>2015-05-14T22:35:36-04:00</updated>
   <id>http://francomendoza.github.io/</id>
   <author>
     <name><![CDATA[Franco]]></name>
@@ -36,7 +36,7 @@
 
 <p>After reading several tutorials, I was able to create my first test manage_stock_portfolio.feature</p>
 
-<p><img src="http://francomendoza.github.io/images/first_test.png" alt="Alt text" /></p>
+<p><img src="http://francomendoza.github.io/images/abstract/first_test.png" alt="Alt text" /></p>
 
 <p>It would truly be magical if Cucumber was able to parse these statements into actual tests, but this is not the case.  Running this feature-test will yield the following…</p>
 
