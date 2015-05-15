@@ -4,7 +4,7 @@
   <title><![CDATA[from Antibodies to Arrays]]></title>
   <link href="http://francomendoza.github.io/atom.xml" rel="self"/>
   <link href="http://francomendoza.github.io/"/>
-  <updated>2015-05-04T00:37:13-04:00</updated>
+  <updated>2015-05-14T22:27:51-04:00</updated>
   <id>http://francomendoza.github.io/</id>
   <author>
     <name><![CDATA[Franco]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Abstract Testing]]></title>
+    <link href="http://francomendoza.github.io/blog/2015/05/14/abstract-testing/"/>
+    <updated>2015-05-14T00:00:00-04:00</updated>
+    <id>http://francomendoza.github.io/blog/2015/05/14/abstract-testing</id>
+    <content type="html"><![CDATA[<p>“Test driven development” is often thrown around as a pillar of good software development.  Its popularity is likely routed in effectiveness, and logically it makes sense to have a standard to compare all your code iterations to.  This is actually a common practice in science as well.  Running a standard during each assay lets you compare your data across assays.</p>
+
+<p>In the world of programming though, we’re always searching for another way to abstract!  There is one abstraction from unit tests, which developers are used to, and it is based in Behavior Driven Development (BDD).</p>
+
+<p>BDD is a combination of TDD and domain-driven design.  It allows for both engineers and project managers to speak a similar language on the platform that matters the most: tests.</p>
+
+<p>So how do people execute BDD?  In Rails, a common tool is the Cucumber gem.  It allows for writing BDD tests in a common vernacular, generally referred to as “user stories.”</p>
+
+<ol>
+<li>A single test for a feature: “As a [role] I want [feature] so that [benefit]”</li>
+<li>Criteria within each test: “Given [context], when [event], then [expected outcome]”</li>
+</ol>
+
+
+<p>To make a little more sense of it, I tried to applying it to a simple rails app I wanted to use to track my portfolio.  Before writing any code I followed some simple instructions on cucumber.io site and added required gems etc.</p>
+
+<p>After reading several tutorials, I was able to create my first test manage_stock_portfolio.feature</p>
+
+<p><img src="http://francomendoza.github.io/images/first_test.png" alt="Alt text" /></p>
+
+<p>It would truly be magical if Cucumber was able to parse these statements into actual tests, but this is not the case.  Running this feature-test will yield the following…</p>
+
+<p><img src="http://francomendoza.github.io/images/cucumber_output.png" alt="Alt text" /></p>
+
+<p>Thankfully these snippets are quite helpful in writing the rest of the test.  I added manage_stock_step.rb to my step_definitions folder and copied the snippets directly over.  I began to define each block to perform the specific action described in the scenario.</p>
+
+<p><img src="http://francomendoza.github.io/images/steps.png" alt="Alt text" /></p>
+
+<p>As you may have noticed, many steps in the scenario are explicit in the user behavior, and this was a common suggestion from many tutorials.  This is likely because Cucumber used to come with a helper web_steps.rb file that had common phrases such as “click on” and “fill in” associated with the right actions.  The key word here is “used-to.”  The creator of Cucumber recently dissolved the web_steps helper file claiming that it was leading to poorly written BDD tests.</p>
+
+<p>His argument: Such specific actions such as clicking on a button, and filling in information in a field are not abstract enough to bridge the gap between engineers and product managers.  These tests are just as readable as the syntax provided by the Capybara gem (which is used in the step blocks anyway).   His suggestion was to keep feature tests more abstract and fill in the details with helper-methods to the steps file.</p>
+
+<p>I rewrote my original tests like so…</p>
+
+<p><img src="http://francomendoza.github.io/images/new_test.png" alt="Alt text" /></p>
+
+<p>The feature test is now truly abstracting away the details of the transaction and focusing on the event and expected outcome.  This language is both suitable for product managers to understand and also potentially reusable for engineers to write more complicated user scenarios.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Enter the Graph]]></title>
