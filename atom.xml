@@ -4,7 +4,7 @@
   <title><![CDATA[from Antibodies to Arrays]]></title>
   <link href="http://francomendoza.github.io/atom.xml" rel="self"/>
   <link href="http://francomendoza.github.io/"/>
-  <updated>2015-05-14T22:35:36-04:00</updated>
+  <updated>2015-05-15T09:21:55-04:00</updated>
   <id>http://francomendoza.github.io/</id>
   <author>
     <name><![CDATA[Franco]]></name>
@@ -36,7 +36,7 @@
 
 <p>After reading several tutorials, I was able to create my first test manage_stock_portfolio.feature</p>
 
-<p><img src="http://francomendoza.github.io/images/abstract/first_test.png" alt="Alt text" /></p>
+<p><img src="http://francomendoza.github.io/images/first_test.png" alt="Alt text" /></p>
 
 <p>It would truly be magical if Cucumber was able to parse these statements into actual tests, but this is not the case.  Running this feature-test will yield the following…</p>
 
@@ -44,7 +44,7 @@
 
 <p>Thankfully these snippets are quite helpful in writing the rest of the test.  I added manage_stock_step.rb to my step_definitions folder and copied the snippets directly over.  I began to define each block to perform the specific action described in the scenario.</p>
 
-<p><img src="http://francomendoza.github.io/images/steps.png" alt="Alt text" /></p>
+<p><img src="http://francomendoza.github.io/images/test_blocks.png" alt="Alt text" /></p>
 
 <p>As you may have noticed, many steps in the scenario are explicit in the user behavior, and this was a common suggestion from many tutorials.  This is likely because Cucumber used to come with a helper web_steps.rb file that had common phrases such as “click on” and “fill in” associated with the right actions.  The key word here is “used-to.”  The creator of Cucumber recently dissolved the web_steps helper file claiming that it was leading to poorly written BDD tests.</p>
 
@@ -52,7 +52,7 @@
 
 <p>I rewrote my original tests like so…</p>
 
-<p><img src="http://francomendoza.github.io/images/new_test.png" alt="Alt text" /></p>
+<p><img src="http://francomendoza.github.io/images/last_test.png" alt="Alt text" /></p>
 
 <p>The feature test is now truly abstracting away the details of the transaction and focusing on the event and expected outcome.  This language is both suitable for product managers to understand and also potentially reusable for engineers to write more complicated user scenarios.</p>
 ]]></content>
