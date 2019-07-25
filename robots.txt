@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://francomendoza.github.io/sitemap.xml 
