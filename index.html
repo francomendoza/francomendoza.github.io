@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>You vs. Tit for Tat</title>
+    <script src="./index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      let game = new Game();
+      console.log(game)
+    </script>
+    <style media="screen">
+      body {
+        text-align: center;
+        font-family: monospace;
+      }
+
+      .scores-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .score-container {
+        margin: 10px;
+      }
+
+      button {
+        padding: 15px;
+        border-radius: 4px;
+        width: 200px;
+        font-size: 25px;
+        margin: 10px;
+        font-family: monospace;
+      }
+
+      button#cooperate {
+        background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
+        color: white;
+        border: none;
+      }
+
+      button#reset {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id='round'>Round 1</h1>
+    <div class="scores-container">
+      <div class="score-container">
+        <h1>Tit for Tat BOT3000 Score</h1>
+        <h1 id='tit-for-tat-score'>0</h1>
+      </div>
+      <div class="score-container">
+        <h1>Human Score</h1>
+        <h1 id='human-score'>0</h1>
+      </div>
+    </div>
+    <div class="move-container">
+      <button type="button" id="cooperate">Cooperate</button>
+      <button type="button" id="defect">Defect</button>
+    </div>
+    <button type="button" id="reset">New Game</button>
+    <script type="text/javascript">
+      document.querySelector('button#cooperate')
+        .addEventListener('click', (evt) => {
+          game.completeRound('cooperate')
+        })
+      document.querySelector('button#defect')
+        .addEventListener('click', (evt) => {
+          game.completeRound('defect')
+        })
+      document.querySelector('button#reset')
+        .addEventListener('click', (evt) => {
+          game = new Game();
+          game.updateBoard();
+        })
+    </script>
+  </body>
+</html>
